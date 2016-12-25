@@ -1,0 +1,13 @@
+#include <conio.h>
+#include <stdlib.h>
+ 
+int main()
+{
+    char name[50];
+    std::cout << "What is your name, warrior?" << std::endl;
+    std::cin.getline(name, 50);
+    std::cout << "You better move fast, " << name << ". The goblins are attacking the city." << std::endl;
+    std::cout << "\n----------------------Press any key to continue----------------------" << std::endl;
+    _getch();
+    return 0;
+}
