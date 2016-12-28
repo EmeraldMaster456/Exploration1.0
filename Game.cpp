@@ -33,13 +33,15 @@ start:
 		system("Pause");
 		goto start;
 	}
- 
+	
 selection:
-std::playerArea[6]={"","","","","",""};
-    char name[50];
-    std::cout << "Recall your name: " << std::endl;
-    std::cin.getline(name, 50);
-    std::cout << name << " woke up "<<playerArea[0] << std::endl;
+std::openning1[4]={"With the fields stretching behind me,","As the sun scorch my back,","After the long departure of a friend,","Glancing over my map,"};
+std::oppening2[4]={"I said my goodbyes to my guide,","I allowed fate to guide me,","I gazed at the darkness ahead,","I began my journey,"};
+std::oppening3[4]={"As I swore a victorous return.","As I saw shadows ahead.","As I held my hat against the wind.","As I felt a terrible chill gone down my spine."};
+std::oppening4[6]={"Silence.","Echo is my name.","I am Sorrow.","I, Love, will find her.","Rage will conquer all.","Will the Great Explorer."};
+std::playerName[6]={"Silence","Echo","Sorrow","Love","Rage","Will"};
+std::playerArea[6]={"in a moist cave.","in a forest opening.","in a place tainted with bones.","in a place that feels almost alive.","in a dark castle.","in a "};
+    std::cout << PlayerName[0] << " woke up "<<playerArea[0] << std::endl;
     std::cout << "\n----------------------Press any key to continue----------------------" << std::endl;
     _getch();
     return 0;
